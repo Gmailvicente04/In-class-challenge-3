@@ -22,9 +22,13 @@ let inventory = {
         this.items.push({name, quantity});
     }
 };
-
 inventory.additem("apple", 10);
-inventory.additem("banana", 20);
-
+inventory.additem("banana", 5);
 console.log(inventory.items);
+//remove first item
+inventory.items.shift();
+console.log(inventory.items);
+
+
+
 
