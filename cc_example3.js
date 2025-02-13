@@ -44,3 +44,17 @@ some_employee = findEmployee(employees, "Vicente");
 
 console.log(findEmployee(employees, "Vicente"));
 
+//task 8 combinig arrays and objects
+
+let orders1 = [
+    {id: 3, customer: "Charlie" },
+    {id: 4, customer: "Dave" }
+];
+let orders2 = [
+    {id: 5, customer: "Eve" },
+    {id: 6, customer: "Frank" }
+];
+function combineOrders(order1, order2) {
+    return [...order1, ...order2]
+}
+console.log(combineOrders(orders1, orders2));
