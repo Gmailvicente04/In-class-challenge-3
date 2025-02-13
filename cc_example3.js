@@ -30,5 +30,17 @@ inventory.items.shift();
 console.log(inventory.items);
 
 
+//task 7 using the find method
+let employees = [
+    {name:"Vicente", salary:1000},
+    {name:"Jorge", salary:2000},
+    {name:"Ana", salary:3000},
+];
 
+function findEmployee(employees, name){
+    return employees.find(employee => employee.name === name);
+}
+some_employee = findEmployee(employees, "Vicente");
+
+console.log(findEmployee(employees, "Vicente"));
 
